@@ -1,0 +1,8 @@
+//Preloader
+window.onload = function() {
+   let preloader = document.getElementById('loader-wrapper');
+   preloader.classList.add('hide-preloader');
+   setInterval(function() {
+         preloader.classList.add('preloader-hidden');
+   }, 1800);
+}
