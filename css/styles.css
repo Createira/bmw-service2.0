@@ -1253,19 +1253,6 @@ body {
 .contact__btn:hover {
    background-color: var(--main-color);
 }
-
-.contacts__map {
-   filter: grayscale(100%);
-   transition: 1s;
-}
-
-.contacts__map:hover {
-   filter: grayscale(0);
-}
-
-.contacts__image {
-   max-width: 100%;
-}
 /*=== Page Contacs End ===*/
 /*=== BREAKPOINTS ===*/
 @media all and (max-width: 1440px) {
@@ -1374,13 +1361,6 @@ body {
    .reviews__text {
       font-size: 20px;
    }
-
-   /* About */
-   .up-link {
-      right: 40px;
-      bottom: 100px;
-      outline: none;
-   }
 }
 
 @media all and (max-width: 767px) {
@@ -1435,6 +1415,10 @@ body {
    .reviews::before {
       height: 100px;
       top: -80px;
+   }
+
+   .main {
+      padding: 0px 10px;
    }
 
    /* About */
