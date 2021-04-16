@@ -529,7 +529,9 @@ body {
 .swiper-slide-bg {
    max-width: 33.33333%;
    height: 200px;
-   background-color: #000;
+   background: url('/images/reviews-slider-bg.png');
+   background-position: top;
+   background-size: contain;
 }
 
 /*== About ==*/ 
