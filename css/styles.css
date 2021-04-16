@@ -355,6 +355,27 @@ body {
    justify-content: flex-end;
 }
 
+.active {
+   width: 100%;
+   display: none;
+   position: absolute;
+   top: 100px;
+   left: 0;
+   z-index: 20;
+}
+
+.active .nav__list {
+   width: 100%;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+   background-color: #292929bc;
+}
+
+.active .nav__item {
+   margin-bottom: 5px;
+}
+
 .nav__list {
    display: flex;
    justify-content: space-between;
@@ -1394,6 +1415,10 @@ body {
 
    .nav {
       display: none;
+   }
+   
+   .active {
+      display: flex;
    }
 
    .nav-toggle {

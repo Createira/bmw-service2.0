@@ -20,3 +20,11 @@ window.addEventListener('scroll', () => {
 		header.classList.remove('header--fixed');
 	}
 });
+
+//Burger 
+/* Menu nav toggle */
+$("#nav_toggle").on("click", function(event) {
+      event.preventDefault();
+  
+      $("#nav").toggleClass("active");
+}); 
