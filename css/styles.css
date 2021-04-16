@@ -900,7 +900,7 @@ body {
    transition: all 300ms ease-in-out;
 }
 
-.card-img {
+.card__img {
    visibility: hidden;
    width: 100%;
    height: var(--card-img-height);
@@ -909,7 +909,7 @@ body {
    background-size: cover;
 }
 
-.card-img-hovered {
+.card__img-hovered {
    --card-img-hovered-overlay: linear-gradient(to bottom, rgba(0, 0, 0, 0),rgba(0, 0, 0, 0));
    transition: all 350ms ease-in-out;
    background-repeat: no-repeat;
@@ -921,13 +921,13 @@ body {
    top: 0;
 }
 
-.card-info {
+.card__info {
    position: relative;
    padding: 16px 20px 44px 20px;
    transition: all 200ms ease-in-out;
 }
 
-.card-about {
+.card__about {
    display: flex;
    justify-content: space-between;
    align-items: center;
@@ -966,7 +966,7 @@ body {
    background: #7700ff;
 }
 
-.card-title {
+.card__title {
    z-index: 10;
    font-size: 24px;
    padding-bottom: 12px;
@@ -978,117 +978,117 @@ body {
    transform: scale(1.025);
 }
 
-.card:hover .card-img-hovered {
+.card:hover .card__img-hovered {
    --card-img-hovered-overlay: linear-gradient(to bottom,#00000000, #000000a6);
    height: 100%;
 }
 
-.card:hover .card-about,
+.card:hover .card__about,
 .card:hover .card__price {
    opacity: 0;
 }
 
-.card:hover .card-info {
+.card:hover .card__info {
    background-color: transparent;
 }
 
-.card:hover .card-title {
+.card:hover .card__title {
    color: #ebecf0;
    transform: translate(0, 40px);
 }
 
-.card-1 .card-img,
-.card-1 .card-img-hovered {
+.card-1 .card__img,
+.card-1 .card__img-hovered {
    background-image: var(--card-img-hovered-overlay), url(/images/cleaners-card-1.jpg);
 }
  
-.card-2 .card-img,
-.card-2 .card-img-hovered {
+.card-2 .card__img,
+.card-2 .card__img-hovered {
    background-image: var(--card-img-hovered-overlay), url(/images/cleaners-card-2.jpg);
 }
  
-.card-3 .card-img,
-.card-3 .card-img-hovered {
+.card-3 .card__img,
+.card-3 .card__img-hovered {
    background-image: var(--card-img-hovered-overlay), url(/images/cleaners-card-3.jpg);
 }
  
-.card-4 .card-img,
-.card-4 .card-img-hovered {
+.card-4 .card__img,
+.card-4 .card__img-hovered {
    background-image: var(--card-img-hovered-overlay), url(/images/cleaners-card-4.jpg);
 }
 
-.card-5 .card-img,
-.card-5 .card-img-hovered {
+.card-5 .card__img,
+.card-5 .card__img-hovered {
    background-image: var(--card-img-hovered-overlay), url(/images/cleaners-card-5.jpg);
 }
 
-.card-6 .card-img,
-.card-6 .card-img-hovered {
+.card-6 .card__img,
+.card-6 .card__img-hovered {
    background-image: var(--card-img-hovered-overlay), url(/images/cleaners-card-6.jpg);
 }
 
-.card-7 .card-img,
-.card-7 .card-img-hovered {
+.card-7 .card__img,
+.card-7 .card__img-hovered {
    background-image: var(--card-img-hovered-overlay), url(/images/maintenance-card-7.jpg);
 }
 
-.card-8 .card-img,
-.card-8 .card-img-hovered {
+.card-8 .card__img,
+.card-8 .card__img-hovered {
    background-image: var(--card-img-hovered-overlay), url(/images/maintenance-card-8.jpg);
 }
 
-.card-9 .card-img,
-.card-9 .card-img-hovered {
+.card-9 .card__img,
+.card-9 .card__img-hovered {
    background-image: var(--card-img-hovered-overlay), url(/images/transport-card-9.jpg);
 }
 
-.card-10 .card-img,
-.card-10 .card-img-hovered {
+.card-10 .card__img,
+.card-10 .card__img-hovered {
    background-image: var(--card-img-hovered-overlay), url(/images/transport-card-10.jpg);
 }
 
-.card-11 .card-img,
-.card-11 .card-img-hovered {
+.card-11 .card__img,
+.card-11 .card__img-hovered {
    background-image: var(--card-img-hovered-overlay), url(/images/wheels-card-11.jpg);
 }
 
-.card-12 .card-img,
-.card-12 .card-img-hovered {
+.card-12 .card__img,
+.card-12 .card__img-hovered {
    background-image: var(--card-img-hovered-overlay), url(/images/wheels-card-12.jpg);
 }
 
-.card-13 .card-img,
-.card-13 .card-img-hovered {
+.card-13 .card__img,
+.card-13 .card__img-hovered {
    background-image: var(--card-img-hovered-overlay), url(/images/wheels-card-13.jpg);
 }
 
-.card-14 .card-img,
-.card-14 .card-img-hovered {
+.card-14 .card__img,
+.card-14 .card__img-hovered {
    background-image: var(--card-img-hovered-overlay), url(/images/performance-card-14.jpg);
 }
 
-.card-15 .card-img,
-.card-15 .card-img-hovered {
+.card-15 .card__img,
+.card-15 .card__img-hovered {
    background-image: var(--card-img-hovered-overlay), url(/images/performance-card-15.jpg);
 }
 
-.card-16 .card-img,
-.card-16 .card-img-hovered {
+.card-16 .card__img,
+.card-16 .card__img-hovered {
    background-image: var(--card-img-hovered-overlay), url(/images/performance-card-16.jpg);
 }
 
-.card-17 .card-img,
-.card-17 .card-img-hovered {
+.card-17 .card__img,
+.card-17 .card__img-hovered {
    background-image: var(--card-img-hovered-overlay), url(/images/performance-card-17.jpg);
 }
 
-.card-18 .card-img,
-.card-18 .card-img-hovered {
+.card-18 .card__img,
+.card-18 .card__img-hovered {
    background-image: var(--card-img-hovered-overlay), url(/images/performance-card-18.jpg);
 }
 
-.card-19 .card-img,
-.card-19 .card-img-hovered {
+.card-19 .card__img,
+.card-19 .card__img-hovered {
    background-image: var(--card-img-hovered-overlay), url(/images/performance-card-19.jpg);
 }
 /*=== Page Services End ===*/
@@ -1274,7 +1274,7 @@ body {
    }
 
    .swiper-image {
-      max-width: 1100px;
+      max-width: 900px;
    }
 }
 
@@ -1420,7 +1420,7 @@ body {
    }
 
    .swiper-image {
-      max-width: 700px;
+      max-width: 500px;
    }
 
    .about {
@@ -1591,6 +1591,14 @@ body {
 
    .main__title:first-child {
       margin-top: 10px;
+   }
+
+   .vacancies__img {
+      left: 70px;
+   }
+
+   .vacancies__item::after {
+      left: 60px;
    }
 }
 
