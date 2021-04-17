@@ -366,14 +366,19 @@ body {
 
 .active .nav__list {
    width: 100%;
+   height: 100vh;
    flex-direction: column;
-   justify-content: center;
+   justify-content: flex-start;
    align-items: center;
    background-color: #292929f3;
 }
 
 .active .nav__item {
-   margin-bottom: 5px;
+   margin-bottom: 10px;
+}
+
+.active .nav__link {
+   font-size: 25px;
 }
 
 .nav__list {
