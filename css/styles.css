@@ -1275,6 +1275,10 @@ body {
       font-size: 14px;
    }
 
+   .intro__bg {
+      height: 800px;
+   }
+
    .intro__inner {
       padding: 100px 20px 0 20px;
    }
