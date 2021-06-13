@@ -836,7 +836,9 @@ body {
 }
 
 .about__content img {
+   width: 100%;
    max-width: 1200px;
+   height: auto;
 }
 
 .service__content {
