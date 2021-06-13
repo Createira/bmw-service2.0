@@ -387,6 +387,15 @@ body {
    align-items: center;
 }
 
+.nav__list--about {
+   margin-bottom: 20px;
+}
+
+.nav__list--service {
+   flex-direction: column;
+   justify-content: center
+}
+
 .nav__link {
    margin-left: 40px;
    text-decoration: none;
@@ -547,7 +556,7 @@ body {
    height: 25px;
    font-size: 20px;
    background-color: var(--main-color);
-   box-shadow: inset 0 0 10px 1px #d49919de;
+   box-shadow: inset 0 0 10px 1px var(--main-color);
 }
 
 /*== Swiper-2 ==*/
@@ -707,9 +716,9 @@ body {
    display: block;
    width: 50%;
    height: 400px;
-   border-top: 4px solid #f3ba3e;
-   border-right: 4px solid #f3ba3e80;
-   border-bottom: 4px solid #f3ba3e80;
+   border-top: 4px solid var(--main-color);
+   border-right: 4px solid var(--main-color);
+   border-bottom: 4px solid var(--main-color);
    position: absolute;
    top: 25%;
    left: 0;
@@ -810,116 +819,149 @@ body {
 }
 /*=== Home Page End ===*/
 /*=== About Us / Service Page Start ===*/
-.content {
-   display: flex;
-   flex-direction: column;
-   justify-content: center;
-   align-items: center;
-   margin-top: 20px;
+.about__content {
+   padding: 10px 30px;
 }
 
-.box {
-   width: 100%;
-   height: 300px;
-   padding-top: 50px;
+.about__content h2 {
+   margin-top: 40px;
+   font-size: 40px;
    color: #fff;
-   font-size: 25px;
 }
 
-.box h1,
-.box p {
-   padding: 0 30px;
-}
- 
-.about-1 {
-   height: 100vh;
-   background-image: url('/images/jpg9614.jpg');
-   background-attachment: fixed;
-   background-size: cover;
-}
- 
-.about-3 {
-   height: 800px;
-   background-image: url('/images/staff.jpg');
-   background-attachment: fixed;
-   background-size: cover;
-}
- 
-.about-5 {
-   height: 800px;
-   background-image: url('/images/spares-1.jpg');
-   background-attachment: fixed;
-   background-size: cover;
+.about__content p {
+   margin-bottom: 10px;
+   font-size: 20px;
+   color: #fff;
 }
 
-.about-7 {
-   height: 800px;
-   background-image: url('/images/DSC_0840-scaled.jpg');
-   background-attachment: fixed;
-   background-size: cover;
+.about__content img {
+   max-width: 1200px;
 }
 
-.about-9 {
-   height: 800px;
-   background-image: url('/images/car-wash.jpg');
-   background-attachment: fixed;
-   background-size: cover;
+.service__content {
+   padding: 10px 30px;
 }
 
-.about-11 {
-   height: 800px;
-   background-image: url('/images/MAIN-PHOTO.jpg');
-   background-attachment: fixed;
-   background-size: cover;
+.service__title {
+   margin-top: 40px;
+   font-size: 40px;
+   color: #fff;
 }
 
+.service__text {
+   margin-bottom: 10px;
+   font-size: 20px;
+   color: #fff; 
+}
 
+.service__list-item {
+   margin-left: 25px;
+   font-size: 20px;
+   color: #fff; 
+}
+
+.service__image {
+   max-width: 1200px;
+}
+
+.dropbtn {
+   margin-left: 40px;
+   text-decoration: none;
+   color: #fff;
+   font-weight: 900;
+   font-size: 15px;
+   font-family: 'Exo 2', sans-serif;
+}
+
+.dropdown {
+   position: relative;
+   display: inline-block;
+}
+
+.dropdown__content {
+   display: none;
+   position: absolute;
+   background-color: #363636;
+   min-width: 300px;
+   box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+   z-index: 1;
+}
+
+.dropdown__link {
+   display: block;
+   padding: 5px 15px;
+   text-decoration: none;
+   color: #fff;
+   font-weight: 900;
+   font-size: 15px;
+   font-family: 'Exo 2', sans-serif;
+}
+
+.dropdown__content a:hover {
+   background-color: #f3ba3e;
+}
+
+.dropdown:hover .dropdown__content {
+   display: block;
+}
+
+.dropdown:hover .dropbtn {
+   background-color: #272727;
+}
 /*=== About Us / Service Page Start ===*/
 /*==== Page Goods/Accessories Start ====*/
-.card__container {
-   width: 100%;
+.filters-button {
+   margin: 40px 0;
    display: flex;
-   flex-flow: row wrap;
+   flex-wrap: wrap;
    justify-content: center;
-   align-items: center;
-   transition: all 200ms ease-in-out;
+}
+
+.filter-btn {
+   margin-left: 30px;
+   margin-bottom: 10px;
+   padding: 10px 30px;
+   font-weight: 900;
+   text-transform: uppercase;
+   color: #fff;
+   text-decoration: none;
+   background-color: transparent;
+   border: 2px solid #fff;
+   border-radius: 50px;
+   cursor: pointer;
+   outline: none;
+   transition: all .3s linear;
+}
+
+.filter-btn:hover {
+   background-color: var(--main-color);
+   border: 2px solid var(--main-color);
+}
+
+.grid {
+   width: 100%;
+   margin-left: 4%;
 }
  
 .card {
-   align-self: flex-start;
-   position: relative;
    width: 325px;
    min-width: 275px;
    margin: 20px 12px;
    background: white;
-   transition: all 300ms ease-in-out;
 }
 
 .card__img {
-   visibility: hidden;
    width: 100%;
    height: var(--card-img-height);
    background-repeat: no-repeat;
    background-position: center center;
    background-size: cover;
-}
-
-.card__img-hovered {
-   --card-img-hovered-overlay: linear-gradient(to bottom, rgba(0, 0, 0, 0),rgba(0, 0, 0, 0));
-   transition: all 350ms ease-in-out;
-   background-repeat: no-repeat;
-   background-position: center center;
-   background-size: cover;
-   width: 100%;
-   position: absolute;
-   height: var(--card-img-height);
-   top: 0;
 }
 
 .card__info {
-   position: relative;
+   min-height: 140px;
    padding: 16px 20px 44px 20px;
-   transition: all 200ms ease-in-out;
 }
 
 .card__about {
@@ -927,7 +969,6 @@ body {
    justify-content: space-between;
    align-items: center;
    padding: 12px 0;
-   transition: all 200ms ease-in-out;
 }
 
 .card__tag {
@@ -961,130 +1002,14 @@ body {
    background: #7700ff;
 }
 
+.card__tag--gift{
+   background: #ff0062;
+}
+
 .card__title {
    z-index: 10;
    font-size: 24px;
    padding-bottom: 12px;
-   transition: all 350ms ease-in-out;
-}
-
-.card:hover {
-   box-shadow: 0px 15px 35px #e3fcef1a, 0px 5px 15px #00000012;
-   transform: scale(1.025);
-}
-
-.card:hover .card__img-hovered {
-   --card-img-hovered-overlay: linear-gradient(to bottom,#00000000, #000000a6);
-   height: 100%;
-}
-
-.card:hover .card__about,
-.card:hover .card__price {
-   opacity: 0;
-}
-
-.card:hover .card__info {
-   background-color: transparent;
-}
-
-.card:hover .card__title {
-   color: #ebecf0;
-   transform: translate(0, 40px);
-}
-
-.card-1 .card__img,
-.card-1 .card__img-hovered {
-   background-image: var(--card-img-hovered-overlay), url(/images/cleaners-card-1.jpg);
-}
- 
-.card-2 .card__img,
-.card-2 .card__img-hovered {
-   background-image: var(--card-img-hovered-overlay), url(/images/cleaners-card-2.jpg);
-}
- 
-.card-3 .card__img,
-.card-3 .card__img-hovered {
-   background-image: var(--card-img-hovered-overlay), url(/images/cleaners-card-3.jpg);
-}
- 
-.card-4 .card__img,
-.card-4 .card__img-hovered {
-   background-image: var(--card-img-hovered-overlay), url(/images/cleaners-card-4.jpg);
-}
-
-.card-5 .card__img,
-.card-5 .card__img-hovered {
-   background-image: var(--card-img-hovered-overlay), url(/images/cleaners-card-5.jpg);
-}
-
-.card-6 .card__img,
-.card-6 .card__img-hovered {
-   background-image: var(--card-img-hovered-overlay), url(/images/cleaners-card-6.jpg);
-}
-
-.card-7 .card__img,
-.card-7 .card__img-hovered {
-   background-image: var(--card-img-hovered-overlay), url(/images/maintenance-card-7.jpg);
-}
-
-.card-8 .card__img,
-.card-8 .card__img-hovered {
-   background-image: var(--card-img-hovered-overlay), url(/images/maintenance-card-8.jpg);
-}
-
-.card-9 .card__img,
-.card-9 .card__img-hovered {
-   background-image: var(--card-img-hovered-overlay), url(/images/transport-card-9.jpg);
-}
-
-.card-10 .card__img,
-.card-10 .card__img-hovered {
-   background-image: var(--card-img-hovered-overlay), url(/images/transport-card-10.jpg);
-}
-
-.card-11 .card__img,
-.card-11 .card__img-hovered {
-   background-image: var(--card-img-hovered-overlay), url(/images/wheels-card-11.jpg);
-}
-
-.card-12 .card__img,
-.card-12 .card__img-hovered {
-   background-image: var(--card-img-hovered-overlay), url(/images/wheels-card-12.jpg);
-}
-
-.card-13 .card__img,
-.card-13 .card__img-hovered {
-   background-image: var(--card-img-hovered-overlay), url(/images/wheels-card-13.jpg);
-}
-
-.card-14 .card__img,
-.card-14 .card__img-hovered {
-   background-image: var(--card-img-hovered-overlay), url(/images/performance-card-14.jpg);
-}
-
-.card-15 .card__img,
-.card-15 .card__img-hovered {
-   background-image: var(--card-img-hovered-overlay), url(/images/performance-card-15.jpg);
-}
-
-.card-16 .card__img,
-.card-16 .card__img-hovered {
-   background-image: var(--card-img-hovered-overlay), url(/images/performance-card-16.jpg);
-}
-
-.card-17 .card__img,
-.card-17 .card__img-hovered {
-   background-image: var(--card-img-hovered-overlay), url(/images/performance-card-17.jpg);
-}
-
-.card-18 .card__img,
-.card-18 .card__img-hovered {
-   background-image: var(--card-img-hovered-overlay), url(/images/performance-card-18.jpg);
-}
-
-.card-19 .card__img,
-.card-19 .card__img-hovered {
-   background-image: var(--card-img-hovered-overlay), url(/images/performance-card-19.jpg);
 }
 /*=== Page Services End ===*/
 /*=== Page Vacancies Start ===*/

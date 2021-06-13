@@ -1,17 +1,3 @@
-// Fixed Header
-const header = document.querySelector('.header'); //Find out the element header 
-const headerHeight = header.offsetHeight; //Find out the height of the element
-
-window.addEventListener('scroll', () => {
-	let scrollDistance = window.scrollY;
-
-	if (scrollDistance >= headerHeight) {
-		header.classList.add('header--fixed');
-	} else {
-		header.classList.remove('header--fixed');
-	}
-});
-
 //Burger 
 /* Menu nav toggle */
 $("#nav_toggle").on("click", function(event) {
@@ -19,3 +5,24 @@ $("#nav_toggle").on("click", function(event) {
   
       $("#nav").toggleClass("active");
 }); 
+
+// Инициализая секции с которой работаем
+let grid = new Isotope('.grid', {
+      itemSelector: '.grid-item',
+});
+  
+// Работаем с кнопками фильтров
+let filterBtn = document.querySelectorAll('.filters-button .filter-btn');
+for (let i = 0; i < filterBtn.length; i++) {
+// Если кликнули по ссылке
+filterBtn[i].onclick = function (click) {
+       // Отменяем переход
+      click.preventDefault();
+      // Получаем значение дата-атрибута кнопки
+      let filterData = event.target.getAttribute('data-filter');
+      // Применяем фильтрацию элементов в Isotope
+      grid.arrange({
+            filter: filterData
+      });
+};
+}
