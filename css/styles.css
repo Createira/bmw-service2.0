@@ -857,6 +857,10 @@ body {
    color: #fff; 
 }
 
+.service__list {
+   margin-bottom: 10px;
+}
+
 .service__list-item {
    margin-left: 25px;
    font-size: 20px;
