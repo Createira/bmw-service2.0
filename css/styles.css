@@ -1236,11 +1236,6 @@ body {
       z-index: 3;
    }
 
-   /* About */
-   .main {
-      max-width: 700px;
-   }
-
    /* Contacts */
    .contacts {
       padding-left: 0;
@@ -1339,34 +1334,6 @@ body {
    .reviews::before {
       height: 100px;
       top: -80px;
-   }
-
-   .main {
-      padding: 0px 10px;
-   }
-
-   /* About */
-   .content {
-      flex-direction: column;
-   }
-
-   .main {
-      padding-top: 20px;
-      border-top: 1px solid #fff;
-   }
-
-   .main__title {
-      text-align: center;
-      font-size: 40px;
-   }
-
-   .sidebar--centered {
-      max-width: 670px;
-      margin: 0 auto;
-   }
-
-   .sidebar__item--centered {
-      text-align: center;
    }
 }
 
@@ -1488,17 +1455,8 @@ body {
       padding: 0;
    }
 
-   .main {
-      padding: 0 15px;
-   }
-
-   .main__title {
-      font-size: 40px;
-      text-align: center;
-   }
-
-   .main__title:first-child {
-      margin-top: 10px;
+   .grid {
+      margin-left: 0;
    }
 
    .vacancies__img {
