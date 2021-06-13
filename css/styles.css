@@ -1175,6 +1175,30 @@ body {
 .contact__btn:hover {
    background-color: var(--main-color);
 }
+
+.btn__to-top {
+   width: 50px;
+   height: 50px;
+   display: flex;
+   text-decoration: none;
+   border-radius: 50%;
+   background-color: #292929;
+   font-family: 'Exo 2', sans-serif;
+   font-size: 15px;
+   color: #fff;
+   opacity: 0;
+   box-shadow: 0 0 30px 1px #000;
+   position: fixed;
+   right: 30px;
+   bottom: 100px;
+   z-index: 12;
+}
+
+.btn__to-top i {
+   padding: 15px;
+   font-size: 20px;
+   color: var(--main-color);
+}
 /*=== Page Contacs End ===*/
 /*=== BREAKPOINTS ===*/
 @media all and (max-width: 1440px) {
