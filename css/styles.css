@@ -868,7 +868,9 @@ body {
 }
 
 .service__image {
+   width: 100%;
    max-width: 1200px;
+   height: auto;
 }
 
 .dropbtn {
@@ -1487,6 +1489,10 @@ body {
 
    .grid {
       margin-left: 0;
+   }
+
+   .card {
+      margin: 12px 0;
    }
 
    .vacancies__img {
