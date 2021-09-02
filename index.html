@@ -1,21 +1,33 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-   <meta charset="UTF-8">
-   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   <script src="https://kit.fontawesome.com/d457c8665c.js" crossorigin="anonymous"></script>
-   <link rel="preconnect" href="https://fonts.gstatic.com">
-   <link href="https://fonts.googleapis.com/css2?family=Exo+2:wght@300;400;700&display=swap" rel="stylesheet">
-   <link rel="shortcut icon" href="/images/bmw-logo-2020-grey.png" type="image/x-icon">
-   <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css"/>
-   <link rel="stylesheet" href="/css/styles.css">
-   <title>BMW Service</title>
-</head>
-<body>
-
-   <!-- Page Loader -->
-   <div class="loader-wrapper" id="loader-wrapper">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script
+      src="https://kit.fontawesome.com/d457c8665c.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Exo+2:wght@300;400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="shortcut icon"
+      href="/images/bmw-logo-2020-grey.png"
+      type="image/x-icon"
+    />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper@7/swiper-bundle.min.css"
+    />
+    <link rel="stylesheet" href="/css/styles.css" />
+    <title>BMW Service</title>
+  </head>
+  <body>
+    <!-- Page Loader -->
+    <div class="loader-wrapper" id="loader-wrapper">
       <div class="loader">
         <div class="line"></div>
         <div class="line"></div>
@@ -32,216 +44,407 @@
         <div class="needle"></div>
         <div class="loading">Loading</div>
       </div>
-   </div>
-   <!-- Page Loader End-->
+    </div>
+    <!-- Page Loader End-->
 
-      <div class="wrapper">
-         <div class="intro__bg">
-            <header class="header" id="header">
-               <div class="container">
-                  <div class="header__inner">
-                     <a href="index.html"><img class="header__logo" src="/images/bmw-logo.png" alt="Checkpoint BMW logo" ></a>
+    <div class="wrapper">
+      <div class="intro__bg">
+        <header class="header" id="header">
+          <div class="container">
+            <div class="header__inner">
+              <a href="index.html"
+                ><img
+                  class="header__logo"
+                  src="/images/bmw-logo.png"
+                  alt="Checkpoint BMW logo"
+              /></a>
 
-                     <nav class="nav" id="nav">
-                        <ul class="nav__list">
-                           <li class="nav__item"><a class="nav__link nav__link--visit" href="index.html">Home</a></li>
-                           <li class="nav__item"><a class="nav__link" href="about.html">About Us</a></li>
-                           <li class="nav__item"><a class="nav__link" href="service.html">Services</a></li>
-                           <li class="nav__item"><a class="nav__link" href="goods.html">Accessories</a></li><li class="nav__item"><a class="nav__link" href="vacancies.html">Vacancies</a></li>
-                           <li class="nav__item"><a class="nav__link" href="contacts.html">Contact</a></li>
-                        </ul> 
-                     </nav><!-- /.navigation -->
+              <nav class="nav" id="nav">
+                <ul class="nav__list">
+                  <li class="nav__item">
+                    <a class="nav__link nav__link--visit" href="index.html"
+                      >Home</a
+                    >
+                  </li>
+                  <li class="nav__item">
+                    <a class="nav__link" href="about.html">About Us</a>
+                  </li>
+                  <li class="nav__item">
+                    <a class="nav__link" href="service.html">Services</a>
+                  </li>
+                  <li class="nav__item">
+                    <a class="nav__link" href="goods.html">Accessories</a>
+                  </li>
+                  <li class="nav__item">
+                    <a class="nav__link" href="vacancies.html">Vacancies</a>
+                  </li>
+                  <li class="nav__item">
+                    <a class="nav__link" href="contacts.html">Contact</a>
+                  </li>
+                </ul>
+              </nav>
+              <!-- /.navigation -->
 
-                     <a class="header__phone" href="tel:08081591234"><i class="fas fa-phone-alt"></i></a>
-                     <button class="nav-toggle" id="nav_toggle"></button>
-                  </div>
-               </div><!-- /.container -->
-            </header>
-
-            <div class="container">
-               <div class="intro__inner">
-                  <h1 class="intro__title">BMW Service</h1>
-                  <h2 class="intro__subtitle">Over 10 years of excellent quality</h2>
-                  <a href="contacts.html#contacts" class="intro__btn">Book now</a>
-               </div><!-- /.intro -->
+              <a class="header__phone" href="tel:08081591234"
+                ><i class="fas fa-phone-alt"></i
+              ></a>
+              <button class="nav-toggle" id="nav_toggle"></button>
             </div>
-         </div><!-- /intro-bg -->
-      
+          </div>
+          <!-- /.container -->
+        </header>
 
-         <div class="services">
-            <div class="container">
-               <div class="services__inner">
-                  <div class="services__item">
-                     <img class="services__icon" src="/images/service-item1.png" alt="Icon car mechanic">
-                     <h3 class="services__title">Get an estimate</h3>
-                  </div>
-                  <div class="services__item">
-                     <img class="services__icon" src="/images/service-item2.png" alt="Icon car brake">
-                     <h3 class="services__title">Brake Service</h3>
-                  </div>
-                  <div class="services__item">
-                     <img class="services__icon" src="/images/service-item3.png" alt="Icon car wheels">
-                     <h3 class="services__title">Wheel Service</h3>
-                  </div>
-                  <div class="services__item">
-                     <img class="services__icon" src="/images/service-item4.png" alt="Icon car battery">
-                     <h3 class="services__title">Engine Service</h3>
-                  </div>
-               </div>
-            </div><!-- /.container-->
-         </div><!--/.services-->
+        <div class="container">
+          <div class="intro__inner">
+            <h1 class="intro__title">BMW Service</h1>
+            <h2 class="intro__subtitle">Over 10 years of excellent quality</h2>
+            <a href="contacts.html#contacts" class="intro__btn">Book now</a>
+          </div>
+          <!-- /.intro -->
+        </div>
+      </div>
+      <!-- /intro-bg -->
 
-         <!-- Swiper -->
-         <div class="container">
-            <div class="swiper-container swiper-container-one">
-               <div class="swiper-wrapper">
-               <div class="swiper-slide"><img class="swiper-image" src="/images/swiper-1.jpg" alt="Photo a man removes paint from a BMW"></div>
-               <div class="swiper-slide"><img class="swiper-image" src="/images/swiper-2.jpg" alt="Photo bmw door repair"></div>
-               <div class="swiper-slide"><img class="swiper-image" src="/images/swiper-3.jpg" alt="Photo grinding wheels bmw"></div>
-               <div class="swiper-slide"><img class="swiper-image" src="/images/swiper-4.jpg" alt="Photo windshield check"></div>
-               <div class="swiper-slide"><img class="swiper-image" src="/images/swiper-5.jpg" alt="Photo trunk check"></div>
-               <div class="swiper-slide"><img class="swiper-image" src="/images/swiper-6.jpg" alt="Photo rear axle check"></div>
-               </div>
+      <div class="services">
+        <div class="container">
+          <div class="services__inner">
+            <div class="services__item">
+              <img
+                class="services__icon"
+                src="/images/service-item1.png"
+                alt="Icon car mechanic"
+              />
+              <h3 class="services__title">Get an estimate</h3>
             </div>
-         </div><!-- /.container -->
-  
-         <div class="about">
-            <div class="container">
-               <div class="about__inner">
-                  <div class="about__item">
-                     <div class="about__image about__image--1"></div>
-                     <div class="about__description">
-                        <h2 class="about__title">Certified Service</h2>
-                        <p class="about__text">We employ certfied professionals with over 7 years of experience.</p>
-                     </div>
-                     <div class="about__link">
-                        <a href="about.html#staff">Read more <i class="fas fa-long-arrow-alt-right"></i></a>
-                     </div>
-                  </div><!-- /.about__item -->
-
-                  <div class="about__item">
-                     <div class="about__image about__image--2"></div>
-                     <div class="about__description">
-                        <h2 class="about__title">Original spares</h2>
-                        <p class="about__text">We receive all spare parts directly from an authorized BMW dealer.</p>
-                     </div>
-                     <div class="about__link">
-                        <a href="about.html#spares">Read more <i class="fas fa-long-arrow-alt-right"></i></a>
-                     </div>
-                  </div><!-- /.about__item -->
-
-                  <div class="about__item">
-                     <div class="about__image about__image--3"></div>
-                     <div class="about__description">
-                        <h2 class="about__title">Free car</h2>
-                        <p class="about__text">We provide a car during the repair of your car. Make good use of this time.</p>
-                     </div>
-                     <div class="about__link">
-                        <a href="about.html#cars">Read more <i class="fas fa-long-arrow-alt-right"></i></a>
-                     </div>
-                  </div><!-- /.about__item -->
-
-                  <div class="about__item">
-                     <div class="about__image about__image--4"></div>
-                     <div class="about__description">
-                        <h2 class="about__title">Free car wash</h2>
-                        <p class="about__text">We can wash your car and its interior free of charge if necessary.</p>
-                     </div>
-                     <div class="about__link">
-                        <a href="about.html#wash">Read more <i class="fas fa-long-arrow-alt-right"></i></a>
-                     </div>
-                  </div><!-- /.about__item -->
-               </div><!-- /.about__inner -->
-            </div><!-- /.container -->
-         </div><!-- /.about -->
-
-         <div class="reviews">
-            <div class="container">
-               <div class="reviews__inner">
-                  <img class="reviews__image" src="/images/top-view.png" alt="BMW top-view">
-                  <div class="reviews__description">
-                     <h2 class="reviews__title">Our clients are the best</h2>
-                     <p class="reviews__text">We value each of our clients and try to improve our service. Leave your review and get a card with 10% discount.</p>
-                  </div>
-               </div>
-            </div><!-- /.container -->
-
-            <!-- Swiper -->
-            <div class="container">
-               <div class="swiper-container swiper-container-two">
-                  <div class="swiper-wrapper">
-                  <div class="swiper-slide swiper-slide-bg">Slide 1</div>
-                  <div class="swiper-slide swiper-slide-bg">Slide 2</div>
-                  <div class="swiper-slide swiper-slide-bg">Slide 3</div>
-                  <div class="swiper-slide swiper-slide-bg">Slide 4</div>
-                  <div class="swiper-slide swiper-slide-bg">Slide 5</div>
-                  <div class="swiper-slide swiper-slide-bg">Slide 6</div>
-                  <div class="swiper-slide swiper-slide-bg">Slide 7</div>
-                  <div class="swiper-slide swiper-slide-bg">Slide 8</div>
-                  </div>
-                  <!-- Add Pagination -->
-                  <div class="swiper-pagination"></div>
-               </div>
+            <div class="services__item">
+              <img
+                class="services__icon"
+                src="/images/service-item2.png"
+                alt="Icon car brake"
+              />
+              <h3 class="services__title">Brake Service</h3>
             </div>
-      </div><!-- /.reviews -->
-   </div><!-- /.wrapper -->
-   
-   <footer class="footer">
+            <div class="services__item">
+              <img
+                class="services__icon"
+                src="/images/service-item3.png"
+                alt="Icon car wheels"
+              />
+              <h3 class="services__title">Wheel Service</h3>
+            </div>
+            <div class="services__item">
+              <img
+                class="services__icon"
+                src="/images/service-item4.png"
+                alt="Icon car battery"
+              />
+              <h3 class="services__title">Engine Service</h3>
+            </div>
+          </div>
+        </div>
+        <!-- /.container-->
+      </div>
+      <!--/.services-->
+
+      <!-- Swiper -->
+      <div class="swiper myswiper">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <img
+              class="swiper-image"
+              src="/images/swiper-1.jpg"
+              alt="Photo a man removes paint from a BMW"
+            />
+          </div>
+          <div class="swiper-slide">
+            <img
+              class="swiper-image"
+              src="/images/swiper-2.jpg"
+              alt="Photo bmw door repair"
+            />
+          </div>
+          <div class="swiper-slide">
+            <img
+              class="swiper-image"
+              src="/images/swiper-3.jpg"
+              alt="Photo grinding wheels bmw"
+            />
+          </div>
+          <div class="swiper-slide">
+            <img
+              class="swiper-image"
+              src="/images/swiper-4.jpg"
+              alt="Photo windshield check"
+            />
+          </div>
+          <div class="swiper-slide">
+            <img
+              class="swiper-image"
+              src="/images/swiper-5.jpg"
+              alt="Photo trunk check"
+            />
+          </div>
+          <div class="swiper-slide">
+            <img
+              class="swiper-image"
+              src="/images/swiper-6.jpg"
+              alt="Photo rear axle check"
+            />
+          </div>
+        </div>
+        <div class="swiper-pagination"></div>
+      </div>
+
+      <!-- About Us -->
+      <div class="about">
+        <div class="container">
+          <div class="about__inner">
+            <div class="about__item">
+              <div class="about__image about__image--1"></div>
+              <div class="about__description">
+                <h2 class="about__title">Certified Service</h2>
+                <p class="about__text">
+                  We employ certfied professionals with over 7 years of
+                  experience.
+                </p>
+              </div>
+              <div class="about__link">
+                <a href="about.html#staff"
+                  >Read more <i class="fas fa-long-arrow-alt-right"></i
+                ></a>
+              </div>
+            </div>
+            <!-- /.about__item -->
+
+            <div class="about__item">
+              <div class="about__image about__image--2"></div>
+              <div class="about__description">
+                <h2 class="about__title">Original spares</h2>
+                <p class="about__text">
+                  We receive all spare parts directly from an authorized BMW
+                  dealer.
+                </p>
+              </div>
+              <div class="about__link">
+                <a href="about.html#spares"
+                  >Read more <i class="fas fa-long-arrow-alt-right"></i
+                ></a>
+              </div>
+            </div>
+            <!-- /.about__item -->
+
+            <div class="about__item">
+              <div class="about__image about__image--3"></div>
+              <div class="about__description">
+                <h2 class="about__title">Free car</h2>
+                <p class="about__text">
+                  We provide a car during the repair of your car. Make good use
+                  of this time.
+                </p>
+              </div>
+              <div class="about__link">
+                <a href="about.html#cars"
+                  >Read more <i class="fas fa-long-arrow-alt-right"></i
+                ></a>
+              </div>
+            </div>
+            <!-- /.about__item -->
+
+            <div class="about__item">
+              <div class="about__image about__image--4"></div>
+              <div class="about__description">
+                <h2 class="about__title">Free car wash</h2>
+                <p class="about__text">
+                  We can wash your car and its interior free of charge if
+                  necessary.
+                </p>
+              </div>
+              <div class="about__link">
+                <a href="about.html#wash"
+                  >Read more <i class="fas fa-long-arrow-alt-right"></i
+                ></a>
+              </div>
+            </div>
+            <!-- /.about__item -->
+          </div>
+          <!-- /.about__inner -->
+        </div>
+        <!-- /.container -->
+      </div>
+      <!-- /.about -->
+
+      <div class="reviews">
+        <div class="container">
+          <div class="reviews__inner">
+            <img
+              class="reviews__image"
+              src="/images/top-view.png"
+              alt="BMW top-view"
+            />
+            <div class="reviews__description">
+              <h2 class="reviews__title">Our clients are the best</h2>
+              <p class="reviews__text">
+                We value each of our clients and try to improve our service.
+                Leave your review and get a card with 10% discount.
+              </p>
+            </div>
+          </div>
+        </div>
+        <!-- /.container -->
+      </div>
+      <!-- /.reviews -->
+    </div>
+    <!-- /.wrapper -->
+
+    <footer class="footer">
       <div class="container">
-         <div class="socials">
-            <h2 class="socials__title">Social</h2>
-            <a href="#" class="socials__link"><i class="fab fa-instagram"></i></a>
-            <a href="#" class="socials__link"><i class="fab fa-facebook-square"></i></a>
-            <a href="#" class="socials__link"><i class="fab fa-twitter-square"></i></a>
-         </div>
+        <div class="socials">
+          <h2 class="socials__title">Social</h2>
+          <a href="#" class="socials__link"><i class="fab fa-instagram"></i></a>
+          <a href="#" class="socials__link"
+            ><i class="fab fa-facebook-square"></i
+          ></a>
+          <a href="#" class="socials__link"
+            ><i class="fab fa-twitter-square"></i
+          ></a>
+        </div>
 
-         <div class="footer__inner">
-            <nav class="footer__nav">
-               <h3 class="footer__title">Our pages</h3>
-               <ul class="footer__nav-list">
-                  <li class="nav__item"><a class="nav__link nav__link--footer nav__link--visit" href="index.html">Home</a></li>
-                  <li class="nav__item"><a class="nav__link nav__link--footer" href="about.html">About Us</a></li>
-                  <li class="nav__item"><a class="nav__link nav__link--footer" href="service.html">Services</a></li>
-                  <li class="nav__item"><a class="nav__link nav__link--footer" href="goods.html">Accessories</a></li>
-                  <li class="nav__item"><a class="nav__link nav__link--footer" href="vacancies.html">Vacancies</a></li>
-                  <li class="nav__item"><a class="nav__link nav__link--footer" href="contacts.html">Contact</a></li>
-               </ul>
-            </nav>
+        <div class="footer__inner">
+          <nav class="footer__nav">
+            <h3 class="footer__title">Our pages</h3>
+            <ul class="footer__nav-list">
+              <li class="nav__item">
+                <a
+                  class="nav__link nav__link--footer nav__link--visit"
+                  href="index.html"
+                  >Home</a
+                >
+              </li>
+              <li class="nav__item">
+                <a class="nav__link nav__link--footer" href="about.html"
+                  >About Us</a
+                >
+              </li>
+              <li class="nav__item">
+                <a class="nav__link nav__link--footer" href="service.html"
+                  >Services</a
+                >
+              </li>
+              <li class="nav__item">
+                <a class="nav__link nav__link--footer" href="goods.html"
+                  >Accessories</a
+                >
+              </li>
+              <li class="nav__item">
+                <a class="nav__link nav__link--footer" href="vacancies.html"
+                  >Vacancies</a
+                >
+              </li>
+              <li class="nav__item">
+                <a class="nav__link nav__link--footer" href="contacts.html"
+                  >Contact</a
+                >
+              </li>
+            </ul>
+          </nav>
 
-            <aside class="sidebar">
-               <h3 class="footer__title">About Us</h3>
-               <ul class="footer__nav-list">
-                  <li class="nav__item"><a href="about.html#about" class="nav__link nav__link--footer">About our service</a></li>
-                  <li class="nav__item"><a href="about.html#staff" class="nav__link nav__link--footer">Certified staff</a></li>
-                  <li class="nav__item"><a href="about.html#spares" class="nav__link nav__link--footer">Original spares</a></li>
-                  <li class="nav__item"><a href="about.html#cars" class="nav__link nav__link--footer">Free car</a></li>
-                  <li class="nav__item"><a href="about.html#wash" class="nav__link nav__link--footer">Free car wash</a></li>
-                  <li class="nav__item"><a href="about.html#working-space" class="nav__link nav__link--footer">Special working space</a></li>  
-               </ul>
-            </aside>
+          <aside class="sidebar">
+            <h3 class="footer__title">About Us</h3>
+            <ul class="footer__nav-list">
+              <li class="nav__item">
+                <a href="about.html#about" class="nav__link nav__link--footer"
+                  >About our service</a
+                >
+              </li>
+              <li class="nav__item">
+                <a href="about.html#staff" class="nav__link nav__link--footer"
+                  >Certified staff</a
+                >
+              </li>
+              <li class="nav__item">
+                <a href="about.html#spares" class="nav__link nav__link--footer"
+                  >Original spares</a
+                >
+              </li>
+              <li class="nav__item">
+                <a href="about.html#cars" class="nav__link nav__link--footer"
+                  >Free car</a
+                >
+              </li>
+              <li class="nav__item">
+                <a href="about.html#wash" class="nav__link nav__link--footer"
+                  >Free car wash</a
+                >
+              </li>
+              <li class="nav__item">
+                <a
+                  href="about.html#working-space"
+                  class="nav__link nav__link--footer"
+                  >Special working space</a
+                >
+              </li>
+            </ul>
+          </aside>
 
-            <aside class="sidebar">
-               <h3 class="footer__title">Service</h3>
-               <ul class="footer__nav-list">
-                  <li class="nav__item"><a href="service.html#spring" class="nav__link nav__link--footer">BMW spring check</a></li>
-                  <li class="nav__item"><a href="service.html#holiday" class="nav__link nav__link--footer">BMW holiday check</a></li>
-                  <li class="nav__item"><a href="service.html#air" class="nav__link nav__link--footer">BMW air conditioning check</a></li>
-                  <li class="nav__item"><a href="service.html#winter" class="nav__link nav__link--footer">BMW winter check</a></li>
-                  <li class="nav__item"><a href="service.html#condition" class="nav__link nav__link--footer">Condition Based Service</a></li>
-                  <li class="nav__item"><a href="service.html#oil" class="nav__link nav__link--footer">BMW engine oil service</a></li>  
-               </ul>
-            </aside>
-         </div><!-- /.footer__inner -->
-         <p class="footer__copyright">Irina Verbilovich &copy; 2021</p>
-      </div><!-- /.container -->
-   </footer><!-- /.footer -->
+          <aside class="sidebar">
+            <h3 class="footer__title">Service</h3>
+            <ul class="footer__nav-list">
+              <li class="nav__item">
+                <a
+                  href="service.html#spring"
+                  class="nav__link nav__link--footer"
+                  >BMW spring check</a
+                >
+              </li>
+              <li class="nav__item">
+                <a
+                  href="service.html#holiday"
+                  class="nav__link nav__link--footer"
+                  >BMW holiday check</a
+                >
+              </li>
+              <li class="nav__item">
+                <a href="service.html#air" class="nav__link nav__link--footer"
+                  >BMW air conditioning check</a
+                >
+              </li>
+              <li class="nav__item">
+                <a
+                  href="service.html#winter"
+                  class="nav__link nav__link--footer"
+                  >BMW winter check</a
+                >
+              </li>
+              <li class="nav__item">
+                <a
+                  href="service.html#condition"
+                  class="nav__link nav__link--footer"
+                  >Condition Based Service</a
+                >
+              </li>
+              <li class="nav__item">
+                <a href="service.html#oil" class="nav__link nav__link--footer"
+                  >BMW engine oil service</a
+                >
+              </li>
+            </ul>
+          </aside>
+        </div>
+        <!-- /.footer__inner -->
+        <p class="footer__copyright">Irina Verbilovich &copy; 2021</p>
+      </div>
+      <!-- /.container -->
+    </footer>
+    <!-- /.footer -->
 
-   <a href="#header" class="btn__to-top" id="to-top"><i class="fas fa-chevron-up"></i></a>
+    <a href="#header" class="btn__to-top" id="to-top"
+      ><i class="fas fa-chevron-up"></i
+    ></a>
 
-   <script  src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-   <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
-   <script src="/scripts/preloader.js"></script>
-   <script src="/scripts/swiper.js"></script>
-   <script src="/scripts/main.js"></script>
-</body>
-</html>ё
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="/scripts/preloader.js"></script>
+    <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+    <script src="/scripts/swiper.js"></script>
+    <script src="/scripts/main.js"></script>
+  </body>
+</html>
