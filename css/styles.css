@@ -582,7 +582,7 @@ body {
   max-width: 80px;
 }
 
-/*== Swiper-1 ==*/
+/*== Swiper Slider ==*/
 .swiper {
   width: 100%;
   margin: 200px 0 120px 0;
@@ -591,11 +591,13 @@ body {
 .swiper-slide img {
   margin: 0 auto;
   display: block;
-  max-width: 1200px;
-  object-fit: cover;
+  width: 100%;
+  height: auto;
 }
 
 .swiper-pagination span {
+  width: 20px;
+  height: 20px;
   background-color: #d6960c;
 }
 
@@ -837,6 +839,7 @@ body {
   color: rgba(255, 255, 255, 0.555);
 }
 /*=== Home Page End ===*/
+
 /*=== About Us / Service Page Start ===*/
 .about__content {
   padding: 10px 30px;
@@ -1224,6 +1227,7 @@ body {
   font-size: 20px;
   color: var(--main-color);
 }
+
 /*=== Page Contacs End ===*/
 /*=== BREAKPOINTS ===*/
 @media all and (max-width: 1440px) {
@@ -1231,9 +1235,9 @@ body {
     justify-content: space-around;
   }
 
-  .swiper-image {
+  /* .swiper-image {
     max-width: 900px;
-  }
+  } */
 }
 
 @media all and (max-width: 1024px) {
@@ -1365,14 +1369,6 @@ body {
     font-size: 30px;
   }
 
-  .swiper-slide-bg {
-    max-width: 50%;
-  }
-
-  .swiper-image {
-    max-width: 500px;
-  }
-
   .about {
     margin-bottom: 100px;
   }
@@ -1388,21 +1384,9 @@ body {
   }
 }
 
-@media all and (min-width: 767px) {
-  .swiper-slide-bg {
-    max-width: 33.3333%;
-  }
-}
-
 @media all and (max-width: 522px) {
   .footer {
     bottom: -565px;
-  }
-}
-
-@media all and (min-width: 500px) {
-  .swiper-slide-bg {
-    max-width: 50%;
   }
 }
 
@@ -1460,10 +1444,6 @@ body {
     max-width: 70px;
   }
 
-  .swiper-image {
-    max-width: 300px;
-  }
-
   .reviews__inner {
     display: flex;
     flex-direction: column;
@@ -1487,10 +1467,6 @@ body {
   .reviews__title {
     margin-bottom: 20px;
     text-align: center;
-  }
-
-  .swiper-slide-bg {
-    max-width: 100%;
   }
 
   .footer__inner {
@@ -1529,11 +1505,5 @@ body {
   .contact__text {
     margin-bottom: 40px;
     font-size: 20px;
-  }
-}
-
-@media all and (min-width: 320px) {
-  .swiper-slide-bg {
-    max-width: 100%;
   }
 }
